@@ -41,6 +41,14 @@ body,
     --radius: 0.5rem;
   }
 
+  .bg-beige {
+    background-color: #e2ae6e;
+  }
+
+  .bg-beige-hover {
+    background-color: #F9C990;
+  }
+
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 60 9.1% 97.8%;
