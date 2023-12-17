@@ -1,9 +1,12 @@
+import './globals.css'
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
-import './globals.css'
 import { ClerkProvider } from '@clerk/nextjs';
-import { ThemeProvider } from '@/components/providers/theme-providers';
+
 import { cn } from '@/lib/utils';
+import { ThemeProvider } from '@/components/providers/theme-providers';
+import { ModalProvider } from '@/components/providers/modal-providers';
+
 
 const font = Open_Sans({ subsets: ['latin'] })
 
@@ -29,6 +32,7 @@ export default function RootLayout({
             enableSystem={false}
             storageKey='harmony-theme'
           >
+            <ModalProvider />
             {children}
           </ThemeProvider>
         </body>

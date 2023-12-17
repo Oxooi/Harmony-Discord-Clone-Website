@@ -50,6 +50,10 @@ export const NavigationSidebar = async () => {
                     </div>
                 ))}
             </ScrollArea>
+            <Separator
+                className="h-[2px] bg-zinc-300 dark:bg-zinc-700 
+                rounded-md w-10 mx-auto"
+            />
             <div className="pb-3 mt-auto flex items-center flex-col gap-y-4">
                 <ModeToggle />
                 <UserButton
