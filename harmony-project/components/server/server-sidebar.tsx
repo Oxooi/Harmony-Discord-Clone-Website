@@ -21,8 +21,8 @@ const iconMap = {
 
 const roleIconMap = {
     [MemberRole.GUEST]: null,
-    [MemberRole.MODERATOR]: <ShieldCheck className="h-4 w-4 mr-2 text-orange-500" />,
-    [MemberRole.ADMIN]: <ShieldAlert className="h-4 w-4 mr-2 text-orange-500" />,
+    [MemberRole.MODERATOR]: <ShieldCheck className="h-4 w-4 mr-2 text-cyan-500" />,
+    [MemberRole.ADMIN]: <ShieldAlert className="h-4 w-4 mr-2 text-rose-500" />,
 }
 
 export const ServerSidebar = async ({
