@@ -63,7 +63,7 @@ export const ChatInput = ({
                     render={({ field }) => (
                         <FormItem>
                             <FormControl>
-                                <div className="relative p-4 p-6">
+                                <div className="relative p-4 pb-6">
                                     <button
                                         type="button"
                                         onClick={() => { }}
