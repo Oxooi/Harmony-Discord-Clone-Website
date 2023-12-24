@@ -1,10 +1,10 @@
 "use client";
 
-import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import qs from "query-string";
+import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
 
 import {
     Form,
@@ -12,10 +12,10 @@ import {
     FormField,
     FormItem,
 } from "@/components/ui/form";
-import { Input } from "../ui/input";
-import { Plus, Smile } from "lucide-react";
 import { useModal } from "@/hooks/use-modal-store";
+import { Plus } from "lucide-react";
 import { EmojiPicker } from "../emoji-picker";
+import { Input } from "../ui/input";
 
 interface ChatInputProps {
     apiUrl: string;
@@ -82,7 +82,9 @@ export const ChatInput = ({
                                         className="px-14 py-6 bg-zinc-200/90 dark:bg-zinc-700/75 border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 text-zinc-600 dark:text-zinc-200"
                                     />
                                     <div className="absolute top-7 right-8">
-                                        <EmojiPicker/>
+                                        <EmojiPicker
+                                            onChange={(emoji: string) => field.onChange(`${field.value} ${emoji}`)}
+                                        />
                                     </div>
                                 </div>
                             </FormControl>
