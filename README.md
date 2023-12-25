@@ -1,5 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Harmony Project - a Discord clone student project
 
+This project represents a more refined version of my previous student project for Epitech school called MyIRC.
+
+It utilized the following modules:
+
+- **cors: ^2.8.5**
+  - *Explanation:* Cross-Origin Resource Sharing (CORS) is a security feature implemented by web browsers that allows or restricts web applications running at one origin to access resources from a different origin.
+
+- **express: ^4.18.2**
+  - *Explanation:* Express is a fast, unopinionated, minimalist web framework for Node.js. It simplifies the process of building web applications and APIs.
+
+- **nodemon: ^2.0.20**
+  - *Explanation:* Nodemon is a utility that monitors for changes in your source code and automatically restarts the server. It is particularly useful during the development phase.
+
+- **socket.io: ^4.5.3**
+  - *Explanation:* Socket.io enables real-time, bidirectional, and event-based communication. It is commonly used for building interactive and dynamic web applications that require instant updates.
+    
 ## Getting Started
 
 First, run the development server:
@@ -20,17 +36,11 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Disclaimer & Credits : 
 
-To learn more about Next.js, take a look at the following resources:
+This project would never have come to fruition without the assistance of the YouTuber: [CodeWithAntonio](https://www.youtube.com/@codewithantonio) 🤗💖 .
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[The video in question](https://www.youtube.com/watch?v=ZbX4Ok9YX94&t=39339s) Big thank you 👏
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Nevertheless !
+I've added my personal touch to enhance the code and make it standalone. This includes implementing a custom system for user authentication/registration and file hosting. Additionally, I'll be revamping the user interface.
